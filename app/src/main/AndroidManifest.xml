@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.flashlight">
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true"></uses-feature>
+
+    <supports-screens
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:anyDensity="true"
+        />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Stay Safe"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".reg"
+            android:label="Register"
+            android:parentActivityName=".login"></activity>
+        <activity android:name=".login"
+            android:label="Login"
+            >
+        </activity>
+        <activity
+            android:name=".SaftyPrecaution"
+            android:label="Safety Pre-Cautions"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".self"
+            android:label="Self Defence"
+            android:parentActivityName=".information" />
+        <activity
+            android:name=".sexualharsmment"
+            android:label="sexualharsment"
+            android:parentActivityName=".Law" />
+        <activity
+            android:name=".childsexual"
+            android:label="Child Sexual"
+            android:parentActivityName=".Law" />
+        <activity
+            android:name=".cybersexual"
+            android:label="Cyber Sexual"
+            android:parentActivityName=".Law" />
+        <activity
+            android:name=".domestic"
+            android:label="Domestic"
+            android:parentActivityName=".Law" />
+        <activity
+            android:name=".gravesexual"
+            android:label="Grave Sexual"
+            android:parentActivityName=".Law" />
+        <activity
+            android:name=".incest"
+            android:label="Incest"
+            android:parentActivityName=".Law" />
+        <activity
+            android:name=".rape"
+            android:label="Rape"
+            android:parentActivityName=".Law" />
+        <activity
+            android:name=".Law"
+            android:label="Legal Information"
+            android:parentActivityName=".information" />
+        <activity
+            android:name=".contactList"
+            android:parentActivityName=".Contacts" />
+        <activity
+            android:name=".Contacts"
+            android:label="Guardians Locator"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".EmergencyAssistance"
+            android:label="Emergency Assistance"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".information"
+            android:label="Information"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".Splash"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Home"></activity>
+    </application>
+
+</manifest>
